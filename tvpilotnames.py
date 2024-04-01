@@ -156,7 +156,7 @@ def loadPilotNames():
     pnFile = pilotNamesFile.get()
     
     try:
-        f = open(pnFile, 'r')
+        f = open(pnFile, 'r', encoding='utf-8')
         pnList = f.readlines()
         pnList.insert(0, "N/A")
     except:
