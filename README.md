@@ -14,7 +14,7 @@ Tiny View PlusとはOSCプロトコルを介して通信を行います。
 2. python tvpilotnames.py
 
 ### 実行ファイルを使用する場合
-MacOSおよびWindows環境で直接稼働する実行ファイルを用意しています。
+MacOSおよびWindows環境で直接稼働する実行ファイルを用意しています。実行ファイルについてはReleaseページをご覧ください。
 
 ### 使用方法
 ![main menu](images/tvpilotnames.png)
