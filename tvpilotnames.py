@@ -15,6 +15,7 @@ import glob
 import subprocess
 import threading
 import atexit
+import time
 
 root = Tk()
 
@@ -220,6 +221,7 @@ def sendPilotName(camera):
         if (0 == camera):
             for c in range(1,5):
                 oscsend(client, c)
+                time.sleep(0.1)
         else:
             oscsend(client, camera)
 
