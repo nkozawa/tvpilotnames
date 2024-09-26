@@ -2,7 +2,7 @@
 # Author: KozakFPV  
 # Copyright (C) 2024 by Nobumichi Kozawa
 
-version = "1.0"
+version = "1.1"
 
 from tkinter import *
 from tkinter import filedialog
@@ -235,6 +235,7 @@ def oscsend(client, camera):
     elif (4 == camera):
         pn = pnCamera4.get()
     
+    pn = pn.strip()
     if (pn != ""):
         client.send_message("/v1/camera/"+str(camera)+"/label", pn)
         print("camera"+str(camera)+" / "+pn)
