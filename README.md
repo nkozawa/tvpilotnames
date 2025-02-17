@@ -22,7 +22,7 @@ Tiny View PlusとはOSCプロトコルを介して通信を行います。
 MacOSおよびWindows環境で直接稼働する実行ファイルを用意しています。実行ファイルについてはReleaseページをご覧ください。
 
 ### 使用方法
-![main menu](images/tvpilotnames.png)
+![main menu](images/tvpilotnames2.png)
 1. Tiny View Plus IP/hostname、Tiny View Plusが稼働しているPCのIP Addressもしくはホスト名を指定する。同じPC上で実行する場合は「Local」ボタンを押すとIP Addressに127.0.0.1が設定されます。
 2. カメラ[n]の横の入力欄は単なる覚書です。チャネルなどを書いておくと便利です。何も書かなくても構いません。
 3. 表計算シートや文書ファイルからパイロット名をクリップボードにコピーします。
