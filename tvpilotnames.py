@@ -1,8 +1,8 @@
 # tvpilotnames - setup pilot names to Tiny View Plus by using OSC protocol
 # Author: KozakFPV  
-# Copyright (C) 2025 by Nobumichi Kozawa
+# Copyright (C) 2024-2025 by Nobumichi Kozawa
 
-version = "2.0a"
+version = "2.0"
 
 from tkinter import *
 from tkinter import filedialog
@@ -53,7 +53,7 @@ def main():
 
     fTVIp = ttk.Frame(frame)
     fTVIp.pack(anchor=W, pady=2)
-    lTVIp = ttk.Label(fTVIp, text=u"Tiny View Plus IP/tvpaddress:")
+    lTVIp = ttk.Label(fTVIp, text=u"TinyViewPlus IP/hostname:")
     lTVIp.pack(side=LEFT)
     eIP1 = ttk.Entry(fTVIp, textvariable=tvpaddress, width=12, font=('sans-serif', 18))
     eIP1.pack(side=LEFT)
@@ -170,7 +170,7 @@ def sendPilotName(camera):
             else:
                 oscsend(client, camera, names[0])
     except:
-        messagebox.showinfo("Error", "Tiny View Plus IP address is invalid or not reachable.")
+        messagebox.showinfo("Error", "TinyViewPlus IP address is invalid or not reachable.")
 
 def oscsend(client, camera, pn):
     pn = pn.strip()
